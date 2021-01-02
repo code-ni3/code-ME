@@ -72,13 +72,13 @@ def count(lst1):
     return cnt
 
 n = (int)(input())
-lst = list()
+lst=list()
 for i in range(n):
     lst1 = list(map(int, input().split()))
     lst2 = list(map(int, input().split()))
     c = count(lst2)
     if (n == 1):
-        T = (int)(c / lst1[1])
+        T = (int)(math.ceil(c / lst1[1]))
     else:
         T = (int)(math.ceil(c / lst1[1]))
     lst.append(T)
